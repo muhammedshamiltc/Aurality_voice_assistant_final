@@ -13,7 +13,7 @@ client = genai.Client(api_key=key)
 
 # All three pipeline stages read their model name from .env so you can
 # swap models without touching any code.
-LLM_MODEL = os.getenv("GEMINI_LLM_MODEL", "gemini-2.5-flash")
-TRANSCRIPTION_MODEL = os.getenv("GEMINI_TRANSCRIPTION_MODEL", "gemini-2.5-flash")
-TTS_MODEL = os.getenv("GEMINI_TTS_MODEL", "gemini-2.5-flash-preview-tts")
+LLM_MODEL = os.getenv("GEMINI_LLM_MODEL", "gemini-3.8-flash")
+TRANSCRIPTION_MODEL = os.getenv("GEMINI_TRANSCRIPTION_MODEL", "gemini-3.8-flash")
+TTS_MODEL = os.getenv("GEMINI_TTS_MODEL", "gemini-3.8-flash-preview-tts")
 DEFAULT_VOICE = os.getenv("GEMINI_TTS_VOICE", "Kore")
